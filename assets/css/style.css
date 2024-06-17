@@ -1,0 +1,39 @@
+/* ========== Import font Kanit & Barlow ========== */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ----------- Bootstrap Class custom ----------- */
+* ,html {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+}
+a { text-decoration: none !important; color: #000; }
+button, input { border: none; background: transparent; outline: none; cursor: pointer; }
+ul, li { list-style: none; }
+img { width: 100%; vertical-align: middle; }
+
+
+:root {
+
+    /* ----------- Color Text ----------- */
+    --text-info: #6B707F;
+    --text-description: #505052;
+    --text-black: #000;
+    --text-white: #fff;
+
+    --color-01: #033d93;
+    --color-02: #1489f6;
+    --color-03: #1489f6;
+
+    --bg-body: #f8f9fa;
+
+    /* ----------- Background icons ----------- */
+    --bg-icon-01: #FE3387;
+    --bg-icon-02: #7A35FE;
+    --bg-icon-03: #68D2FF;
+    --bg-icon-04: #ff8631;
+    --bg-icon-05: #fd5b5b;
+    --bg-icon-06: #4ad00a;
+    --bg-icon-07: #1d8ffa;
+}
