@@ -5,7 +5,9 @@
 
 /* ----------- Bootstrap Class custom ----------- */
 * ,html {
-    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'kanit', sans-serif;
     box-sizing: border-box;
 }
 a { text-decoration: none !important; color: #000; }
@@ -22,18 +24,164 @@ img { width: 100%; vertical-align: middle; }
     --text-black: #000;
     --text-white: #fff;
 
-    --color-01: #033d93;
-    --color-02: #1489f6;
-    --color-03: #1489f6;
+    --theme-red: #D10024;
+    --color-01: #15161D;
+    --color-02: #1E1F29;
 
-    --bg-body: #f8f9fa;
+}
 
-    /* ----------- Background icons ----------- */
-    --bg-icon-01: #FE3387;
-    --bg-icon-02: #7A35FE;
-    --bg-icon-03: #68D2FF;
-    --bg-icon-04: #ff8631;
-    --bg-icon-05: #fd5b5b;
-    --bg-icon-06: #4ad00a;
-    --bg-icon-07: #1d8ffa;
+
+/* ================= Frequently used Class ================= */
+main { background-color: var(--bg-body);}
+.tl-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.tl-topic { text-align: center; }
+.tl-topic p { text-transform: uppercase; font-weight: 600; font-size: 1rem; margin: 0; letter-spacing: 2px; color: var(--color-02); }
+.tl-topic h1 { font-size: 2.2rem; font-weight: 600; padding-top: .5rem; }
+
+
+
+/* ------------------------------------------------------------ */
+/* ================= Header ================= */
+/* ------------------------------------------------------------ */
+
+/* -------------- Menu top -------------- */
+.tl-menutop {
+    width: 100%;
+    padding: .5rem 0;
+    background-color: var(--color-02);
+}
+
+.tl-menutop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tl-menutop-grid svg,
+.tl-menutop-grid i {
+    color: var(--theme-red);
+}
+
+.tl-menutop-grid li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-white);
+}
+
+.tl-menutop-contact,
+.tl-menutop-self {
+    display: flex;
+    gap: 2rem;
+}
+
+.tl-menutop-contact li,
+.tl-menutop-self li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+/* -------------- Menu -------------- */
+.tl-menu {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--color-01);
+}
+
+.tl-menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tl-menu-logo a {
+    font-size: 48px;
+    color: var(--text-white);
+}
+.tl-menu-logo span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--theme-red);
+    border-radius: 50%;
+}
+
+.tl-menu-search {
+    border-radius: 100px;
+    background-color: #fff;
+}
+.tl-menu-search select {
+    padding: .6rem;
+    background-color: #fff;
+    border-radius: 100px 0 0 100px;
+    border: none;
+}
+
+.tl-menu-search input {
+    max-width: 300px;
+    width: 300px;
+    padding: .9rem;
+    background-color: #fff;
+}
+
+.tl-menu-search input[type="submit"] {
+    width: 100px;
+    border-radius: 0 100px 100px 0;
+    background-color: var(--theme-red);
+    color: var(--text-white);
+}
+
+.tl-menu-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tl-menu-cart-con {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-white);
+}
+
+.tl-menu-cart-con p { font-size: 14px; }
+.tl-menu-cart-con i,
+.tl-menu-cart-con svg {
+    position: relative;
+    font-size: 20px;
+}
+
+.tl-menu-cart-total {
+    position: absolute;
+    top: -16px;
+    right: -14px;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    padding-left: 4px;
+    line-height: 1.4;
+    background-color: var(--theme-red);
+    color: var(--text-white);
+    border-radius: 50%;
+}
+
+.tl-menu-cart-con::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--theme-red);
 }
