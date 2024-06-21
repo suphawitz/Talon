@@ -1,5 +1,5 @@
 $('.tl-slider').slick({
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 4,

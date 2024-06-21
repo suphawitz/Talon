@@ -19,7 +19,7 @@ img { width: 100%; vertical-align: middle; }
 :root {
 
     /* ----------- Color Text ----------- */
-    --text-info: #6B707F;
+    --text-info: #aaa;
     --text-description: #505052;
     --text-black: #000;
     --text-white: #fff;
@@ -317,8 +317,160 @@ main { background-color: var(--bg-body);}
 
 /* ------------------------------------------------------------ */
 /* ================= New Products ================= */
-.tl-npd {
-    width: 100%;
-    padding: 2rem 0;
+.tl-npd { width: 100%; padding: 2rem 0; }
+
+.tl-npd-items { padding-top: 2.3rem; }
+.tl-npd-items-con {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid var(--text-info);
 }
 
+.tl-npd-items-con > span {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--text-info);
+}
+
+.tl-npd-items-con h1 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: .2rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tl-npd-items-con .tl-npd-price {
+    width: 100%;
+    padding-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--theme-red);
+    text-align: center;
+    border-bottom: 1px solid var(--text-info);
+}
+
+.tl-npd-items-con .tl-npd-price span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-info);
+    text-decoration: line-through;
+}
+
+.tl-npd-star {
+    margin-top: -12px;
+}
+
+.tl-npd-star i,
+.tl-npd-star svg {
+    font-size: 16px;
+    margin-right: -5px;
+    z-index: 3;
+    background-color: #fff;
+    color: var(--theme-red);
+}
+
+.tl-npd-menu { 
+    display: flex;
+    gap: .4rem;
+    padding: .8rem 0; 
+}
+.tl-npd-menu svg,
+.tl-npd-menu i {
+    font-size: 18px;
+    padding: .8rem;
+    border-radius: 50%;
+    transition: .25s ease;
+}
+
+.tl-npd-menu svg:hover,
+.tl-npd-menu i:hover {
+    color: var(--theme-red);
+    background-color: #eee;
+}
+
+.tl-npd-sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.tl-npd-sale p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: .2rem .6rem;
+    border: 1px solid var(--theme-red);
+}
+.tl-npd-sale .tl-npd-items-new { background-color: var(--theme-red); color: #fff; }
+.tl-npd-sale .tl-npd-items-sale { color: var(--theme-red); }
+
+
+
+/* ------------------------------------------------------------ */
+/* ================= Advert ================= */
+.tl-adv { width: 100%; padding: 2rem 0; background-color: #eee; }
+
+.tl-adv-con {
+    text-align: center;
+}
+
+.tl-adv-times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.tl-adv-times h1 {
+    position: relative;
+    font-size: 26px;
+    margin-top: 3.5rem;
+    color: #fff;
+    z-index: 2;
+}
+.tl-adv-times h1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: var(--theme-red);
+    z-index: -1;
+}
+
+.tl-adv-times h1 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.tl-adv-con > h1,
+.tl-adv-con > h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.tl-adv-con > h1 { padding-top: 4rem; }
+.tl-adv-con h2 { font-weight: 300; margin-top: .8rem; }
+
+.tl-adv-btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: var(--theme-red);
+    color: #fff;
+    border-radius: 100px;
+}
