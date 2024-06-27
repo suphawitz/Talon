@@ -326,9 +326,16 @@ main { background-color: var(--bg-body);}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: .5rem;
+    margin: 0 .5rem;
     padding: 1rem;
     border: 1px solid var(--text-info);
+    background-color: var(--text-white);
+    transition: all .25s ease;
+    z-index: 2;
+}
+
+.tl-npd-items-con:hover {
+    border: 1px solid var(--theme-red);
 }
 
 .tl-npd-items-con > span {
@@ -441,6 +448,53 @@ main { background-color: var(--bg-body);}
 .tl-npd-sale .tl-npd-items-new { background-color: var(--theme-red); color: #fff; }
 .tl-npd-sale .tl-npd-items-sale { color: var(--theme-red); }
 
+
+.tl-npd-addcart {
+    padding: 1rem;
+    margin: 0 .5rem;
+    text-align: center;
+    background-color: var(--color-01);
+    transform: translateY(-120px);
+    transition: .25s ease;
+    /* opacity: 0; */
+    z-index: 1;
+}
+
+.tl-npd-items:hover .tl-npd-addcart {
+    transform: translateY(0);
+    /* opacity: 1; */
+}
+
+.tl-npd-addcart button {
+    font-size: 14px;
+    padding: .8rem 1.2rem;
+    background-color: var(--theme-red);
+    color: #fff;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: .25s ease;
+}
+
+.tl-npd-addcart button:hover {
+    background-color: var(--text-white);
+    color: var(--theme-red);
+}
+
+.tl-npd-addcart i,
+.tl-npd-addcart svg {
+    display: none;
+    padding-right: .5rem;
+    font-size: 20px;
+    transform: translateX(25px);
+    opacity: 0;
+    transition: .25s ease;
+}
+.tl-npd-addcart button:hover i,
+.tl-npd-addcart button:hover svg {
+    display: inline-block;
+    transform: translateX(0px);
+    opacity: 1;
+}
 
 
 /* ------------------------------------------------------------ */
