@@ -1,10 +1,10 @@
 $('.tl-slider').slick({
-    // dots: true,
-    infinite: true,
+    dots: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
