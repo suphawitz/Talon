@@ -661,8 +661,6 @@ main { background-color: var(--bg-body);}
 }
 
 .tl-contact-con form button {
-    /* display: flex;
-    align-items: center; */
     font-size: 14px;
     margin-left: -5px;
     padding: .8rem 1rem;
@@ -685,3 +683,65 @@ main { background-color: var(--bg-body);}
     background-color: #ddd;
     color: var(--theme-red);
 }
+
+
+
+
+/* ------------------------------------------------------------ */
+/* ======================= Footer ======================= */
+/* ------------------------------------------------------------ */
+.tl-footer { width: 100%; background-color: #15161D; }
+.tl-ft-con { padding: 2rem 0; }
+
+.tl-ft-con {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.tl-ft-list { width: 25%; color: #fff; }
+
+.tl-ft-contact a { display: flex !important; align-items: center; }
+
+.tl-ft-list h1 { font-size: 22px; font-weight: 500; text-transform: uppercase; }
+.tl-ft-list p,
+.tl-ft-list a { 
+    display: block;
+    font-size: 15px; 
+    margin-top: 1rem;
+    padding-right: 2rem;
+    font-weight: 300; 
+    color: var(--text-info); 
+    transition: .25s ease;
+}
+
+.tl-ft-list a:hover {
+    color: var(--theme-red);
+}
+
+.tl-ft-list i,
+.tl-ft-list svg {
+    font-size: 18px;
+    padding-right: .5rem;
+    color: var(--theme-red);
+}
+
+.tl-ft-copyright {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #1E1F29;
+    color: #fff;
+}
+
+.tl-ft-copyright i,
+.tl-ft-copyright svg {
+    font-size: 38px;
+    padding: 0 .3rem;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+
+.tl-ft-copyright p a { color: var(--theme-red); }
