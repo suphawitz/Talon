@@ -286,14 +286,15 @@ main { background-color: var(--bg-body);}
 
 .tl-menutop-grid li a {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--text-white);
 }
 
 .tl-menutop-contact,
 .tl-menutop-self {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    padding-right: 2rem;
 }
 
 .tl-menutop-contact li,
@@ -439,24 +440,27 @@ main { background-color: var(--bg-body);}
 
 .tl-headtop-grid {
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 3rem 0;
+}
+
+.tl-headtop-con {
+    width: 33.33%;
 }
 
 .tl-headtop-items {
     position: relative;
-    width: 33.33%;
     height: 250px;
-    /* background-color: #eee; */
+    margin: 1rem;
     overflow: hidden;
 }
 
 .tl-headtop-items::before {
     content: '';
     position: absolute;
-    top: -80%;
-    left: -50%;
+    top: -200px;
+    left: -250px;
     width: 350px;
     height: 600px;
     transform: rotate(40deg);
@@ -512,15 +516,17 @@ main { background-color: var(--bg-body);}
 
 .tl-adv-times {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
 }
 
 .tl-adv-times h1 {
+    width: 100px;
     position: relative;
     font-size: 26px;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     color: #fff;
     z-index: 2;
 }
@@ -571,15 +577,18 @@ main { background-color: var(--bg-body);}
 
 /* ------------- Top Products ------------- */
 .tl-top-prd {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-between;
     gap: 2rem;
     padding: 2rem 0;
 }
 
 .tl-top-prd-con {
-    width: 300px;
+    width: 30.33%;
 }
 
 .tl-top-prd-con h1 {
@@ -653,17 +662,26 @@ main { background-color: var(--bg-body);}
 }
 .tl-contact-con h1 span { font-weight: 600; color: #333; text-transform: uppercase; }
 
+
+.tl-contact-con form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .tl-contact-con form input {
     width: 400px; 
+    max-width: 400px; 
     padding: .8rem 1rem;
     border: 1px solid #505052;
     border-radius: 100px 0 0 100px;
 }
 
 .tl-contact-con form button {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     margin-left: -5px;
-    padding: .8rem 1rem;
+    padding: 1rem;
     border: 1px solid var(--theme-red);
     border-radius: 0 100px 100px 0;
     background-color: var(--theme-red);
@@ -700,7 +718,7 @@ main { background-color: var(--bg-body);}
     justify-content: center;
 }
 
-.tl-ft-list { width: 25%; color: #fff; }
+.tl-ft-list { width: 25%; margin-top: 2rem; color: #fff; }
 
 .tl-ft-contact a { display: flex !important; align-items: center; }
 
@@ -745,3 +763,61 @@ main { background-color: var(--bg-body);}
 }
 
 .tl-ft-copyright p a { color: var(--theme-red); }
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* ======================= Responsive Design ======================= */
+/* ------------------------------------------------------------ */
+
+/* ------------------- Max Width 920px ------------------- */
+@media screen and (max-width: 920px) {
+
+    .tl-topic
+    .tl-container { max-width: 720px; }
+
+    .tl-menutop-grid { gap: .5rem; }
+    .tl-menutop-contact,
+    .tl-menutop-self { width: 100%; }
+
+    .tl-menu-search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tl-menu-grid { justify-content: center; gap: 1rem; }
+    .tl-menu-grid > div { width: 100%; }
+    .tl-menu-logo { text-align: center; }
+    .tl-menu-cart { margin-top: 1rem; justify-content: end; }
+
+    .tl-headtop-con { width: 50%; }
+    .tl-headtop-items { margin: 1rem; }
+
+    .tl-top-prd-con { width: 45%; }
+
+    .tl-ft-list { width: 50%; }
+
+}
+
+
+/* ------------------- Max Width 640px ------------------- */
+@media screen and (max-width: 640px) {
+
+    .tl-topic {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 1rem;
+    }
+    .tl-headtop-con { width: 100%; }
+
+    .tl-top-prd-con { width: 100%; }
+
+    .tl-ft-list { width: 100%; }
+}
