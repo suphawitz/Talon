@@ -16,7 +16,7 @@ git clone https://github.com/suphawitz/Talon.git
 ```
 
 ## Template your project
-![enter image description here](assets/images/z-fullpage.png.png)
+![enter image description here](assets/images/z-fullpage.png)
 
 
 ## Thank you for coming to see.
